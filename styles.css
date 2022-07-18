@@ -1,0 +1,190 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.container-scroll > section{
+  scroll-snap-align: start;
+}
+
+.container-scroll{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/* Welcom section */
+
+#particles-js{
+  width: 100%;
+  height: 100vh;
+  background-color: #08D9D6;
+}
+
+h1{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-family: "Ubuntu", serif;
+  font-weight: 500;
+  font-size: 3rem;
+  animation: slow 4s;
+}
+span{
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+@keyframes slow {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.fade-out{
+  transition: opacity 100ms;
+  opacity: 0;
+}
+
+hr{
+  border-style: none none dotted none;
+  margin-left: 47%;
+  margin-right: 47%;
+  color: #000000;
+  border-width: 0.5rem;
+}
+
+/* Skills section */
+#skills{
+  margin: 0;
+  padding: 10% 10% 15%;
+  background-color: white;
+}
+
+.container-fluid{
+  padding: 10% 10% 15%;
+}
+
+.left-skill-img, .right-skill-img{
+  width: 50%;
+  height: 50%;
+  transition: opacity 450ms ease-in, transform 500ms ease-in;
+  opacity: 0;
+}
+
+.left-skill-img{
+  float: left;
+  transform: translateX(-50%);
+}
+
+.right-skill-img{
+  float: right;
+  transform: translateX(50%);
+}
+
+.fade-in{
+  transform: translate(0);
+  opacity: 1;
+}
+
+.right-text, .left-text{
+  position: relative;
+  font-family: "Montserrat", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  animation: slow 10s;
+}
+
+.right-text{
+  margin-left: 55%;
+}
+
+.left-text{
+  margin-right: 55%;
+}
+
+.sub-header{
+  font-family: "Montserrat",serif;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+}
+
+/* Personalities */
+#personalities{
+  background-color: #FF2E63;
+  text-align: center;
+  color: white;
+}
+
+.personalities-img{
+  width: 15%;
+  border-radius: 50%;
+  margin: 2%;
+}
+
+.carousel-item{
+  padding: 5% 15% 10%;
+}
+
+.personalities-pad{
+  background-color: white;
+  margin: 10% 10% 10%;
+}
+
+/* Contact */
+
+#contact{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+.question{
+  font-size: 200%
+}
+.btn {
+  background: #34a5d9;
+  background-image: linear-gradient(top, #34a5d9, #2bb8ac);
+  background-image: linear-gradient(to bottom, #34a5d9, #2bb8ac);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: 'Cormorant Garamond', serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 9px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3c99fc;
+  background-image: linear-gradient(top, #3c99fc, #34c6d9);
+  background-image: linear-gradient(to bottom, #3c99fc, #34c6d9);
+  text-decoration: none;
+}
+.bottom-copyright{
+  margin-bottom: 0;
+  color: #CCF3EE;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.footer-link{
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 150%;
+}
+.bottom-button{
+  margin: 10px auto 50px 5px;
+}
