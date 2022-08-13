@@ -90,7 +90,7 @@ gsap.utils.toArray(".img").forEach((img,i) =>{
 gsap.utils.toArray(".text").forEach((text,i) => {
   ScrollTrigger.create({
     trigger: text,
-    start: "top 90%",
+    start: "top 80%",
     end: "top 20%",
     toggleClass: "appear"
   })

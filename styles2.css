@@ -107,6 +107,9 @@ span{
   animation: reverse-slow 3s;
   opacity: 0;
 }
+.ai-ml{
+	padding-top: 10%;
+}
 
 .first-letter{
   font-family: "Sacramento", serif;
